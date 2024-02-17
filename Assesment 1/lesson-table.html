@@ -7,7 +7,8 @@
 
     <style>
       table {
-        width: 50%;
+        width: 500px;
+        /* if you doesnt give a width to a table it take the length of longest item and set the width to that length */
         text-align: center;
         border: 1px solid black;
         border-radius: 10px;
@@ -31,6 +32,8 @@
     </style>
   </head>
   <body>
+    <p>=========================Table1===================</p>
+
     <table>
       <thead>
         <tr>
@@ -42,7 +45,7 @@
       <tbody>
         <tr>
           <td>01</td>
-          <td>Rice</td>
+          <td style="height: 100px; width: 800px">Rice</td>
           <td>100</td>
         </tr>
         <tr>
@@ -63,6 +66,34 @@
           <td>900</td>
         </tr>
       </tfoot>
+    </table>
+
+    <p>=========================Table2===================</p>
+
+    <table style="width: 400px">
+      <tr style="height: 100px">
+        <td colspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr style="height: 100px">
+        <td>5</td>
+        <td colspan="3">6</td>
+        
+        
+      </tr>
+      <tr style="height: 100px">
+        <td>9</td>
+        <td colspan="2">10</td>
+        <td>11</td>
+
+      </tr>
+      <tr style="height: 100px">
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+      </tr>
     </table>
   </body>
 </html>
