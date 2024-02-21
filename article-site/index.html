@@ -4,53 +4,235 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Article Site</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/body.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
   </head>
   <body>
     <header>
-      <h1>Logo</h1>
-
+      <h1>Daily News</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Tech</a></li>
-          <li><a href="#">Entertainment</a></li>
-          <li><a href="#">Life</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#sport-section">Sports</a></li>
+          <li><a href="#tech-section">Tech</a></li>
+          <li><a href="#entertainment-section">Entertainment</a></li>
+          <li><a href="#auto-section">Auto</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
         </ul>
       </nav>
-
       <nav>
         <ul>
-          <li>Twitter</li>
-          <li>Instergarm</li>
+          <li><img src="assets/images/twitter.png" alt="twitter" /></li>
+          <li><img src="assets/images/insa.png" alt="instergram" /></li>
         </ul>
       </nav>
     </header>
 
     <main>
-
       <section>
-        <article class="card">
-          <h1>img</h1>
-          <div>
-            <div class="category category-ent">Entertainment</div>
-            <h3>
-              <a href="#">Lorem ipsum dolor sit amet.</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              maiores.
-            </p>
-          </div>
-        </article>
+        <div class="news-card-container">
+          <a href="f1.html" class="a-news-card">
+            <article class="news-card">
+              <img src="assets/images/f1.jpg" alt="news image" />
+              <div class="news-content">
+                <h5>Entertainment</h5>
+                <h2>Formula 1 is Back After Winter Break</h2>
+                <br />
+                <p>
+                  Get ready for the roar of engines! Formula 1 returns for the
+                  2024 season, kicking off in Bahrain on March 2nd. ️ Don't miss
+                  the drama, rivalries, and high-speed action as teams and
+                  drivers battle it out for the championship title.
+                </p>
+                <br />
+                <br />
+                <h5>5 min read</h5>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section>
+        <br />
+        <h2 class="title" id="tech-section">Tech</h2>
+        <br />
+        <div class="news-card-row">
+          <article class="news-card-vertical">
+            <a href="applevision.html" class="a-news-card">
+              <img src="assets/images/apple.jpg" alt="apple" />
+              <div class="news-content">
+                <h5>Tech</h5>
+
+                <h2>Apple Vision Pro</h2>
+                <p>
+                  Apple Vision Pro: Redefining Computing with Spatial
+                  Interaction Apple unveils its revolutionary Vision Pro,
+                  shattering the boundaries of traditional computing.
+                </p>
+                <br />
+                <h5 class="read-time">6 min read</h5>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card-vertical">
+            <a href="sora.html" class="a-news-card">
+              <img src="assets/images/sora.webp" alt="sora" />
+              <div class="news-content">
+                <h5>Tech</h5>
+
+                <h2>Sora AI</h2>
+                <p>
+                  Introducing Sora AI, a revolutionary tool that transforms your
+                  words into captivating video content,bringing your creative
+                  ideas to life with ease.
+                </p>
+                <br />
+                <h5 class="read-time">4 min read</h5>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <br />
+        <h2 class="title" id="entertainment-section">Entertainment</h2>
+        <br />
+        <div class="news-card-row">
+          <article class="news-card-vertical">
+            <a href="avatar.html" class="a-news-card">
+              <img src="assets/images/avatar.jpg" alt="avatar" />
+              <div class="news-content">
+                <h5>Entertainment</h5>
+
+                <h2>Avatar Live Action</h2>
+                <p>
+                  The beloved animated classic, Avatar: The Last Airbender,
+                  bursts onto the screen in stunning live-action form. Follow
+                  Aang, a young Air Nomad and the Avatar, as he awakens in a
+                  world ravaged by war.
+                </p>
+                <br />
+                <h5 class="read-time">7 min read</h5>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card-vertical">
+            <a href="houseofdragons.html" class="a-news-card">
+              <img src="assets/images/dragon.jpeg" alt="dragon" />
+              <div class="news-content">
+                <h5>Entertainment</h5>
+
+                <h2>House of Dragons Season 2</h2>
+                <p>
+                  House of the Dragon returns for a fiery second season,
+                  premiering in August 2024. The Targaryen civil war, known as
+                  the Dance of the Dragons, promising a season filled with epic
+                  battles, and heart wrenching drama.
+                </p>
+                <br />
+                <h5 class="read-time">7 min read</h5>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <br />
+        <h2 class="title" id="auto-section">Auto</h2>
+        <br />
+        <div class="news-card-row">
+          <article class="news-card-vertical">
+            <a href="jesko.html" class="a-news-card">
+              <img src="assets/images/jesko.jpg" alt="jesko" />
+              <div class="news-content">
+                <h5>Auto</h5>
+
+                <h2>Koenigsegg Jesko Absolut</h2>
+                <p>
+                  Unleash the thrill of pure speed with the Koenigsegg Jesko
+                  Absolut. This Swedish masterpiece transcends mere
+                  transportation, pushing the boundaries of design, engineering,
+                  and automotive audacity.
+                </p>
+                <br />
+                <h5 class="read-time">6 min read</h5>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card-vertical">
+            <a href="cybertruck.html" class="a-news-card">
+              <img src="assets/images/cyber.jpg" alt="dragon" />
+              <div class="news-content">
+                <h5>Auto</h5>
+
+                <h2>Cyber Truck</h2>
+                <p>
+                  The Tesla Cybertruck isn't your average pickup truck. It's a
+                  bold and disruptive statement piece, challenging conventional
+                  design and redefining the future of electric vehicles.Also its
+                  a masterpiece amoung modern electric vehicle.
+                </p>
+                <br />
+                <h5 class="read-time">3 min read</h5>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <br />
+        <h2 class="title" id="sport-section">Sports</h2>
+        <br />
+        <div class="news-card-row">
+          <article class="news-card-vertical">
+            <a href="f1.html" class="a-news-card">
+              <img src="assets/images/f1.jpg" alt="f1" />
+              <div class="news-content">
+                <h5>Sports</h5>
+
+                <h2>Formula 1 is Back After Winter Break</h2>
+                <p>
+                  Get ready for the roar of engines! Formula 1 returns for the
+                  2024 season, kicking off in Bahrain on March 2nd. ️ Don't miss
+                  the drama, rivalries, and high-speed action as teams and
+                  drivers battle it out for the championship title.
+                </p>
+                <br />
+                <h5 class="read-time">4 min read</h5>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card-vertical">
+            <a href="max.html" class="a-news-card">
+              <img src="assets/images/max.jpg" alt="max" />
+              <div class="news-content">
+                <h5>Sports</h5>
+
+                <h2>F1 WDC Champion: Max Verstappen</h2>
+                <p>
+                  Max Verstappen, a rising star in Formula 1, has taken the
+                  racing world by storm. From his karting beginnings to his
+                  three World Championship titles, his exceptional talent and
+                  unwavering determination have propelled him to the top.
+                </p>
+                <br />
+                <h5 class="read-time">8 min read</h5>
+              </div>
+            </a>
+          </article>
+        </div>
       </section>
 
       <section>
-        
+        <br />
+        <br />
+        <footer class="footer">
+          <p>&copy;All rights reserved</p>
+        </footer>
       </section>
-
-
     </main>
   </body>
 </html>
