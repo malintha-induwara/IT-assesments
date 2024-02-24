@@ -1,0 +1,80 @@
+CSS INTEGRAION METHODS 
+
+1)Inline Css
+2)Internal Css
+3)External Css
+
+*To add multiple css use " ; " to devide them
+
+
+Follow Best practices
+
+*it help with code optimization - use less cores
+*code redability increase -- 
+
+when we create a css page use the same name as web page for example if index.html is the site name use index.css as css name
+
+
+There is prority order for css
+
+*frist it apply inline css , then internal css , then external css so if you aplly css in all 3 method to a same property it will only disply the inline css. also source order affect this as well
+
+
+you can also see this using inspect browser mode it showes the which are the rejected css
+
+
+Empty cash and hot reload -- client asked sometime why its not worked so this is the solution
+(right click the refresh button and choose)
+
+
+*best practice is to put style tag in the last tag
+
+*SOLID indicatee 5 different principles
+
+
+you can use class selectors to add same theme to multiple different elements 
+eg : if you want to apply some color to lets say h1 h2 h3 tags instead of using
+
+h1 h2 h3{
+color: red;
+}
+
+
+you can just define class
+
+.color-add{
+color: red;
+}
+
+
+and put <h1 class= "color-add"> </h1>
+
+
+pesduo class use in situations when user interact with the website
+
+Css Selectors
+
+
+1)Element
+2ID
+CLass 
+Atribute
+Pseudo Class
+Psedo elemnt
+Descedate + whtiespace
+8) child selector
+9)Adjacant selector(+)
+10)Genral selector(~)
+
+
+the work you done using css selectors called css travasing(search for target elements called travasing)
+
+//Image one attachment
+
+
+
+//Image two attachment
+
+
+specifity is a ruleset that handle css conflit between css selectors
+
