@@ -1,0 +1,42 @@
+p {
+  color: blue;
+}
+
+.content {
+  color: purple;
+}
+
+#content-id {
+  color: brown;
+}
+
+h4 {
+  color: lightsalmon;
+}
+
+.card-title {
+  color: aqua;
+}
+
+#recipe-card-title {
+  color: blue;
+}
+
+div > h4 {
+  color: darkorange;
+}
+
+div .card-title {
+  color: darkgoldenrod;
+}
+
+div #recipe-card-title {
+  color: darkcyan;
+}
+#recipe-card-id #recipe-card-title {
+  color: darkkhaki;
+}
+
+.card .card-title {
+  color: blueviolet;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson -CSS Selectors</title>
+    <style>
+      h2 {
+        color: blue;
+      }
+
+      #main-heading {
+        color: red;
+      }
+
+      .sub-heading {
+        color: green;
+      }
+
+      input[type="text"] {
+        background-color: aqua;
+        color: blueviolet;
+      }
+      /* this select the input tag named type text */
+
+      button:hover {
+        background-color: aquamarine;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      p::first-line {
+        color: red;
+        font-weight: bold;
+      }
+
+      div p {
+        color: aqua;
+      }
+
+      div > h5 {
+        font-weight: bold;
+        font-style: italic;
+        color: lightseagreen;
+      }
+
+      /*  */
+
+      h2 + p {
+        background-color: lightslategray;
+      }
+
+      /* general sibilin selector selcts all <p> elemets that are sibling of an <h3> element */
+      h3 ~ p {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+
+    ======== 1. Element Selectors =======
+
+    <h2>Hello World</h2>
+
+    ======== 2. ID Selectors =======
+
+    <h2 id="main-heading">Hello World</h2>
+
+    ======== 3. Class Selectors =======
+
+    <h2 class="sub-heading">Hello World</h2>
+
+    ======== 4. Attribute Selectors =======
+
+    <br />
+    <input type="text" placeholder="Enter Your Name" />
+    <input type="text-world" placeholder="Enter Your Name" />
+
+    <br />
+
+    ======== 5. Psudo Classes Selectors =======
+    <br />
+    <button>Tap Here</button>
+    <br />
+    ======== 6. Psudo element Selectors =======
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed molestiae
+      laborum suscipit adipisci totam velit! Sed vel praesentium consequuntur
+      ullam, voluptatem laborum inventore modi deleniti officia. Corporis beatae
+      perferendis, eos minima magnam inventore veritatis, ipsam nostrum at vitae
+      qui ea officia, id dolorem praesentium! Impedit ex unde suscipit nesciunt
+      eligendi.
+    </p>
+
+    ======== 7. Psudo element Selectors =======
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero culpa
+        tempore sint nemo cum ratione, at exercitationem reiciendis rerum quidem
+        necessitatibus incidunt voluptatibus, quam, iste corrupti! Sit ipsum
+        provident, voluptatum obcaecati, laboriosam non laudantium reiciendis
+        repellendus facere officia vel earum aliquam iusto cumque assumenda.
+        Quam nulla excepturi labore vitae! Reprehenderit.
+      </p>
+    </div>
+
+    ======== 8. Child Selector(>) =======
+
+    <div>
+      <h5>Java</h5>
+      <h5>Python</h5>
+      <h5>JavaScript</h5>
+      <h5>C++</h5>
+      <h5>C</h5>
+    </div>
+
+    ======== 9. Adjacent Sibiling Selector =======
+
+    <h2>Ready Player One</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla impedit
+      itaque rem tempora obcaecati quasi repellendus sint fuga excepturi magnam
+      quam error, quia optio assumenda ratione incidunt facere adipisci facilis
+      commodi rerum officia sit? Optio illum velit doloremque corrupti eaque
+      quasi natus dolor temporibus molestias. Corrupti, optio a? Obcaecati,
+      repellat?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestias
+      nihil deserunt corporis hic incidunt nemo ea illo, dicta sit deleniti,
+      sequi quis expedita in, doloremque atque aspernatur dolor magnam non.
+      Quos, suscipit culpa laborum iusto non hic cumque veritatis a accusamus
+      dignissimos. Fugiat eveniet quam necessitatibus rerum a est.
+    </p>
+
+    ======== 10. General Sibiling Selector =======
+
+    <h3>Headings h3</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore
+      culpa pariatur voluptatem dolorem non ex repellendus, commodi, animi
+      excepturi, amet aliquam. Voluptatem magni, ad quo alias ratione doloribus
+      repudiandae incidunt magnam nobis nostrum! Temporibus harum soluta natus,
+      tempora sit, molestias, fugiat officiis iusto pariatur earum amet
+      reprehenderit quod ab!
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore
+      culpa pariatur voluptatem dolorem non ex repellendus, commodi, animi
+      excepturi, amet aliquam. Voluptatem magni, ad quo alias ratione doloribus
+      repudiandae incidunt magnam nobis nostrum! Temporibus harum soluta natus,
+      tempora sit, molestias, fugiat officiis iusto pariatur earum amet
+      reprehenderit quod ab!
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore
+      culpa pariatur voluptatem dolorem non ex repellendus, commodi, animi
+      excepturi, amet aliquam. Voluptatem magni, ad quo alias ratione doloribus
+      repudiandae incidunt magnam nobis nostrum! Temporibus harum soluta natus,
+      tempora sit, molestias, fugiat officiis iusto pariatur earum amet
+      reprehenderit quod ab!
+    </p>
+  </body>
+</html>
