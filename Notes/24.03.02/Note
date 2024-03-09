@@ -11,3 +11,39 @@ padding-space between content and boarder
 margin- space between elements
 
 
+
+when there is two margins in two elements it take the highest value as the margin
+
+
+sometime by default html add margins to elements (by defualt 8px)
+you can remove it using margin 0
+
+
+you can add multiple class as well
+ <div class="box-1 box"> in here box-1 and box are separate classes
+
+
+dont use important its because when troubleshooting its hard
+
+
+CSS Units
+1)Precentage - change according to the web browser window size
+2)Pixel - stays the same
+
+
+<hr> tag ---- horizontal rule can get a horizontal line
+
+
+
+in lesson-css-unit.html prestnage box change its values according to the parent element
+thats why it change in first one and not in second one.  In the second one it has a fixed values
+
+
+3)Rem
+
+rem is a fixed value set on browser so you can  change it on each devices
+
+2rem = 1rem*2;
+3rem = 1rem*3;
+
+as you can see it change according to browser default font size
