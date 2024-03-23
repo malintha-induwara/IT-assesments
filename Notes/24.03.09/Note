@@ -1,0 +1,17 @@
+to run on a speciftc prot use http-server -p 3030
+
+Css Positions
+
+deafult css position is static
+
+normally in inspect padding show in brown color
+
+if there is a element absoulte it check the closest element is non static or something
+*static
+*absolute
+*relative
+
+
+
+
+you can give grid tempelete columns in precentage and also with fractions

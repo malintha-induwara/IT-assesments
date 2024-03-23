@@ -1,0 +1,47 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: aquamarine;
+}
+.cardDescription {
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.imgNameContainer {
+  gap: 30px;
+  padding: 10px;
+  align-items: center;
+}
+
+.cardBorder {
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 10px;
+  background-color: wheat;
+  padding: 10px;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
