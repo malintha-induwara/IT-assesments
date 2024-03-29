@@ -12,11 +12,11 @@ body {
 
 .a-news-card {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 .a-news-card:visited {
-  color: inherit; 
+  color: inherit;
 }
 .news-card-container {
   display: flex;
@@ -87,6 +87,8 @@ body {
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 45%;
+  flex: 1 0 auto;
+  margin: 10px;
 }
 
 .news-card-vertical img {
@@ -116,4 +118,10 @@ body {
 
 .news-content p {
   margin: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .news-card-container {
+    display: none;
+  }
 }
