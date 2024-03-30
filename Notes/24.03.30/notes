@@ -1,0 +1,43 @@
+*java script fist came attach to browser
+*JS is single threaded language
+
+to run javascript you need java script engine
+
+so browsers are equipied with them
+
+chrome browser: V8
+firefox: spider monkey
+
+javascrpt+ engine = browser;
+
+
+but later someone remove javascript engine ( V8) and build another module called node.js enviroment( run time enviroment) he created a enviroment to runjavascript without a browser
+
+angular run on type script
+
+
+if you want to create both android and ios you need to learn javascript
+
+if its only android then only java
+if its ios then only swift
+
+
+String builder and String buffer is important
+
+
+
+To define variables we use var,let,const
+
+
+const is use to define constant variables similer to final in java
+
+if you change const variable after the delecralation it give you error
+
+*to run .js file you need to install node.js server into the machine and type
+
+node example.js 
+
+
+
+
+
