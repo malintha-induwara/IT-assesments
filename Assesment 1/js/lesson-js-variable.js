@@ -14,3 +14,5 @@ salary = 400;
 //1. cannot be a reserved word
 //2. variable name should be meaningfull
 //3. Cannot start with numbers
+//4. Cannot contain spaces or hypernets
+//5. Case sensitive
