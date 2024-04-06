@@ -58,7 +58,7 @@ do {
 //=========4 Break========
 
 for (let n = 0; n < 5; n++) {
-  if (n == 4) {
+  if (n === 4) {
     break;
   }
   console.log(n);
@@ -69,8 +69,27 @@ console.log();
 //=========5 Continute========
 
 for (let n = 0; n < 5; n++) {
-  if (n == 4) {
+  if (n === 4) {
     continue;
   }
   console.log(n);
+}
+
+//***********IMPORTANT***********
+// == Vs ===
+
+// ==  -> only check value
+// === -> not only value is also check the data type as well
+
+let num = 5;
+
+console.log("==");
+if (num == 5) {
+  console.log("Hello");
+}
+
+console.log("===");
+
+if (num === 5) {
+  console.log("Hello");
 }
