@@ -71,6 +71,8 @@ console.log("Array after sliced from 0 index ", fruits.slice(0));
 console.log("Array after sliced from 1 index ", fruits.slice(1));
 console.log("Array after sliced from 2 index ", fruits.slice(2));
 
+console.log("====================================");
+
 //8. reverse() - Reverses the elements in an array
 
 let letters = ["a", "b", "c", "d", "e"];
@@ -79,12 +81,21 @@ console.log("Array before reverse: ", letters);
 letters.reverse();
 console.log("Array after reverse: ", letters);
 
+console.log("====================================");
+
 //9. sort() - Sorts the elements of an array in place and returns the array
 
 let numbers = [1, 5, 3, 2, 4];
 console.log("Array before sort: ", numbers);
 numbers.sort();
 console.log("Array after sort: ", numbers);
+
+let lettersArray = ["b", "d", "a", "e", "d"];
+console.log("Array before sort: ", lettersArray);
+lettersArray.sort();
+console.log("Array after sort: ", lettersArray);
+
+//sorting works by using unicode value of the elements
 
 //descending order
 console.log("Array after sort in descending order: ", numbers.sort().reverse());
@@ -93,3 +104,6 @@ let testingArray = ["Amal", "Kamal", "Nimal", 100];
 console.log("Testing Array: ", testingArray);
 console.log("Testing Array 0 index: ", typeof testingArray[0]);
 console.log("Testing Array 3 index: ", typeof testingArray[3]);
+
+console.log(typeof testingArray);
+console.log(typeof numbers);
