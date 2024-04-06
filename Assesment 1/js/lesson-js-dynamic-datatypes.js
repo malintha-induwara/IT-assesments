@@ -13,3 +13,7 @@ console.log("Type of Testing Variable", typeof testingVariale);
 
 testingVariale = false;
 console.log("Type of Testing Variable", typeof testingVariale);
+
+if (typeof testingVariale === "boolean") {
+  console.log("Hello");
+}

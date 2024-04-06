@@ -37,6 +37,18 @@ if you change const variable after the delecralation it give you error
 
 node example.js 
 
+Ecma script is not a progamming language but js build on according to exma script specification
+
+javascript is build on Ecma script
+es6 --- 2016
+es7--- 2017
+
+es13 -- 2023
+
+
+
+java script is not type safe so they inveneted type safe languae called type-script
+
 
 
 

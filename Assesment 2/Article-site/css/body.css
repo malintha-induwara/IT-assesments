@@ -76,7 +76,7 @@ body {
 .news-card-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex;
   flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
