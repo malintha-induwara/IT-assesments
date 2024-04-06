@@ -27,7 +27,7 @@ console.log("====================================");
 let removedFirstStudent = studentNames.shift();
 console.log("Removed first student: ", removedFirstStudent);
 console.log("Student Array after shift: ", studentNames);
-console.log ("O index after shift: ", studentNames[0]);
+console.log("O index after shift: ", studentNames[0]);
 
 console.log("====================================");
 
@@ -52,7 +52,7 @@ console.log("Student Array after splice: ", studentNames);
 
 console.log("====================================");
 
-//6. concat() - Merges two or more arrays and create a new array 
+//6. concat() - Merges two or more arrays and create a new array
 //without modifying the existing arrays
 
 let maleStudents = ["Kamal", "Nimal", "Sunil"];
@@ -61,4 +61,11 @@ let femaleStudents = ["Sithumi", "Kamani"];
 let allStudents = maleStudents.concat(femaleStudents);
 console.log("All Students Array after merge: ", allStudents);
 
+console.log("====================================");
 
+//7. slice() - Returns a shallow copy of a portion of an array into a new array object
+
+let fruits = ["apple", "orange", "pinapple", "banana", "mango"];
+console.log("Array after sliced from 0 index ", fruits.slice(0));
+console.log("Array after sliced from 1 index ", fruits.slice(1));
+console.log("Array after sliced from 2 index ", fruits.slice(2));
