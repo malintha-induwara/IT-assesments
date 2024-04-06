@@ -47,7 +47,8 @@ console.log("====================================");
 //deleteCount - An integer indicating the number of old array elements to remove
 //item1, item2, item3 - The elements to add to the array, beginning from start
 
-studentNames.splice(2, 0, "Kamal", "Simon");
+console.log("Student Array before splice: ", studentNames);
+studentNames.splice(2, 2, "Kamal", "Simon");
 console.log("Student Array after splice: ", studentNames);
 
 console.log("====================================");
@@ -69,3 +70,26 @@ let fruits = ["apple", "orange", "pinapple", "banana", "mango"];
 console.log("Array after sliced from 0 index ", fruits.slice(0));
 console.log("Array after sliced from 1 index ", fruits.slice(1));
 console.log("Array after sliced from 2 index ", fruits.slice(2));
+
+//8. reverse() - Reverses the elements in an array
+
+let letters = ["a", "b", "c", "d", "e"];
+
+console.log("Array before reverse: ", letters);
+letters.reverse();
+console.log("Array after reverse: ", letters);
+
+//9. sort() - Sorts the elements of an array in place and returns the array
+
+let numbers = [1, 5, 3, 2, 4];
+console.log("Array before sort: ", numbers);
+numbers.sort();
+console.log("Array after sort: ", numbers);
+
+//descending order
+console.log("Array after sort in descending order: ", numbers.sort().reverse());
+
+let testingArray = ["Amal", "Kamal", "Nimal", 100];
+console.log("Testing Array: ", testingArray);
+console.log("Testing Array 0 index: ", typeof testingArray[0]);
+console.log("Testing Array 3 index: ", typeof testingArray[3]);
