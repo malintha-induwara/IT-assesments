@@ -6,5 +6,9 @@ let calculateButton = document.getElementById('btnCalculate')
 console.log(calculateButton)
 
 //Class selection
-let inputField = document.getElementsByClassName('box')
-console.log(inputField)
+let box = document.getElementsByClassName('box')
+console.log(box)
+
+//Tag selection
+let h1 = document.getElementsByTagName('h1')
+console.log(h1)
