@@ -36,6 +36,8 @@ let subtractNumbers = (num1, num2) => num1 - num2;
 console.log(subtractNumbers(6, 3));
 
 
+console.log("===================");
+
 //4.  Constructor Function
 
 let Student = function (name, age) {
@@ -44,4 +46,35 @@ let Student = function (name, age) {
 }
 
 //js only have one constructor function if you create multiple constructor function it will take the last one
+
+
+let student1 = new Student("John", 25);
+console.log(student1);
+
+
+console.log("===================");
+
+//5. Callback Function
+
+function myFunction(name) {
+    console.log(name);
+}
+
+let person ={
+    name: "John",
+    age: 25
+}
+
+let numbersArray = [1, 2, 3, 4, 5];
+
+
+function secondFunction() {
+  console.log("Second Function");
+}
+
+ myFunction(numbersArray);
+ myFunction(person);
+
+ myFunction(secondFunction);
+
 
