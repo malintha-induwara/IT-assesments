@@ -36,7 +36,7 @@ getStudentGrade("John", 62);
 getStudentGrade("John", -10);
 
 
-console.log("=====================================");
+console
 
 //Another Method
 
@@ -52,10 +52,7 @@ let studentArray = [
   { name: "John", marks: -10 },
 ];
 
+
 for (let i = 0; i < studentArray.length; i++) {
-  let student = studentArray[i];
-  let grade = gradeSystem(student.marks);
-  console.log(
-    student.name + "s grade is: " + grade + " And Mark is " + student.marks
-  );
+  getStudentGrade(studentArray[i].name, studentArray[i].marks);
 }
