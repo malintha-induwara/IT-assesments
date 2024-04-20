@@ -1,0 +1,32 @@
+Data Types in JS
+
+
+string 
+boolean
+null
+undefined
+symbole
+numbers
+
+Data Types-Primitive
+1)Sting
+2)Numbers
+3)BigInt
+4)Boolean
+
+
+Non-Premetive
+1)Object
+2)Function
+
+
+ES6 Features
+
+let const keywords coming from es6
+also class coming from es6
+
+
+DOM manipulation/DOM handling
+
+
+
