@@ -56,8 +56,9 @@ console.log("===================");
 
 //5. Callback Function
 
-function myFunction(name) {
-    console.log(name);
+function myFunction(callback) {
+  //console.log(callback);
+   callback();
 }
 
 let person ={
@@ -72,9 +73,8 @@ function secondFunction() {
   console.log("Second Function");
 }
 
- myFunction(numbersArray);
- myFunction(person);
-
+ //myFunction(numbersArray);
+ //myFunction(person);
  myFunction(secondFunction);
 
 
