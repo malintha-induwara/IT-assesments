@@ -32,3 +32,14 @@ console.log(hb3);
 
 let hb4 = document.querySelectorAll(".box");
 console.log(hb4);
+
+
+let hb5 = document.querySelector("#container .box");
+console.log(hb5)
+
+let hb6 = document.querySelectorAll("#container .box");
+console.log(hb6)
+
+
+
+//Quary selector all and quary selector is slower than getElementById and getElementByClassName and getElementByTagName
