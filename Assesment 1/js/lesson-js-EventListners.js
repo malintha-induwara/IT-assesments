@@ -1,7 +1,16 @@
-document.getElementById("btnAdd").addEventListener("click", () => {
+let box = document.getElementById("box");
+console.log(box);
+
+box.addEventListener("click", () => {
   alert("how are you");
 });
 
-document.getElementById("box").addEventListener("mouseover", () => {
+box.addEventListener("mouseover", () => {
   console.log("Yooo");
+  box.style.backgroundColor = "red";
+});
+
+box.addEventListener("mouseout", () => {
+  box.style.backgroundColor = "green";
+  console.log("Nooo");
 });
