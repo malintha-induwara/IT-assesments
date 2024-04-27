@@ -18,3 +18,17 @@ console.log(box);
 //Tag selection
 let h1 = document.getElementsByTagName("h1");
 console.log(h1);
+
+
+//Query Selector
+
+let hb2 = document.querySelector("#btnCalculate");
+console.log(hb2);
+
+
+let hb3 = document.querySelector(".box");
+console.log(hb3);
+
+
+let hb4 = document.querySelectorAll(".box");
+console.log(hb4);
