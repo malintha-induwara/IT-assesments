@@ -23,10 +23,21 @@ box.addEventListener("mouseout", () => {
 
 let userNameField = document.getElementById("userName");
 
-userNameField.addEventListener("keydown", () => {
-  console.log("keydown");
+userNameField.addEventListener("keydown", (event) => {
+  console.log(event);
+  console.log("Keycode "+ event.keyCode)
+  console.log("keydown " + event.key);
 });
 
-userNameField.addEventListener("keyup", () => {
-  console.log("keyup");
+//KeyUp
+
+userNameField.addEventListener("keyup", (event) => {
+  console.log("keyup " + event.key);
 });
+
+
+//Submit event
+document.getElementById("myForm").addEventListener("submit", (event)=>{
+    event.preventDefault();
+    console.log("Event submited")
+})
