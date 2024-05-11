@@ -4,8 +4,8 @@
 // }
 
 
-console.log(addNumbers(2,2))
+// console.log(addNumbers(2,2))
 
-var addNumbers = (num1,num2) =>{
-    return num1+num2;
-}
+// var addNumbers = (num1,num2) =>{
+//     return num1+num2;
+// }

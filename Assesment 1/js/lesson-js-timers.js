@@ -21,4 +21,3 @@ let greet = () => {
 let interval = setInterval(greet,1000)
 
 
-

@@ -26,7 +26,7 @@ image.style.height = "300px";
 
 //3. setAttribute sets the value of an attribute
 
-//image.setAttribute('src', '/assets/1.webp')
+image.setAttribute('src', '/assets/1.webp')
 
 
 //4.class List
@@ -34,19 +34,21 @@ image.style.height = "300px";
 console.log(box.classList)
 box.classList.add('aaa','bbb','ccc')
 
+console.log(box.classList);
+
 box.classList.remove('ccc')
 
 
 box.classList.replace("aaa","mmm")
 
-
-
+console.log(box.classList);
 //append and append child
 
 
 let parentDiv = document.createElement('div')
 box.append(parentDiv)
 
+parentDiv.textContent="mata"
 
 let childDiv = document.createElement('div')
 childDiv.setAttribute('attribute', 'new')
@@ -56,5 +58,5 @@ childDiv.appendChild(childDiv)
 //7. Remove and removeChild
 
 
-parentDiv.removeChild(childDiv)
-parentDiv.remove()
+// parentDiv.removeChild(childDiv)
+// parentDiv.remove()
