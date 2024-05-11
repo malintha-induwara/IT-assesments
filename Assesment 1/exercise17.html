@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .box {
+        width: 400px;
+        height: 500px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 20px;
+      }
+
+      .txt {
+        width: 370px;
+        height: 30px;
+      }
+
+      #btn {
+        background-color: blue;
+        margin-top: 20px;
+        width: 70px;
+        height: 30px;
+        font-size: 15px;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+      }
+
+      #btn:hover {
+        background-color: darkblue;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+      }
+
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <form id="registrationForm">
+          <h2>Customer Registration</h2>
+          <h4>Full Name</h4>
+          <input id="name" class="txt" type="text" />
+          <span class="error" id="name-Error"></span>
+          <h4>Email</h4>
+          <input id="email" class="txt" type="text" />
+          <span class="error" id="email-Error"></span>
+          <h4>Password</h4>
+          <input id="password" class="txt" type="text" />
+          <span class="error" id="password-Error"></span>
+          <h4>Confirm Password</h4>
+          <input id="confirmPassword" class="txt" type="text" />
+          <span class="error" id="confirmPassword-Error"></span>
+          <button id="btn" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#registrationForm").submit(function (event) {
+          event.preventDefault();
+
+          validateForm();
+        });
+      });
+
+      function validateForm() {
+        let isValid = true;
+
+        let username = $("#name").val();
+        let email = $("#email").val();
+        let password = $("#password").val();
+        let confirmPassword = $("#confirmPassword").val();
+
+        if (username === null || username === "") {
+          $("#name-Error").text("Please enter your name");
+          isValid = false;
+          return;
+        } else {
+          $("#name-Error").text("");
+        }
+
+        if (email === null || email === "") {
+          $("#email-Error").text("Please enter your email");
+          isValid = false;
+          return;
+        } else {
+          $("#email-Error").text("");
+        }
+
+        if (password === null || password === "") {
+          $("#password-Error").text("Please enter your password");
+          isValid = false;
+          return;
+        } else {
+          $("#password-Error").text("");
+        }
+
+        if (confirmPassword === null || confirmPassword === "") {
+          $("#confirmPassword-Error").text("Please confirm your password");
+          isValid = false;
+          return;
+        } else {
+          $("#confirmPassword-Error").text("");
+        }
+
+        if (password !== confirmPassword) {
+          $("#confirmPassword-Error").text("Passwords do not match");
+          isValid = false;
+          return;
+        } else {
+          $("#confirmPassword-Error").text("");
+        }
+
+        if (isValid) {
+          alert("Registration successful");
+        }
+
+        return isValid;
+      }
+    </script>
+  </body>
+</html>
